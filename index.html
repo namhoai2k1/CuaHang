@@ -1,0 +1,957 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <!-- link fas 6-->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+        />
+        <!-- CSS only -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+        />
+        <link rel="stylesheet" href="./style/header.css" />
+        <link rel="stylesheet" href="./style/footer.css" />
+        <link rel="stylesheet" href="./style/style.css" />
+    </head>
+    <body>
+        <header>
+            <div class="header-top py-2">
+                <div class="container mx-auto">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="d-flex gap-1 align-items-center">
+                                <i class="bi bi-bookmark-check"></i>
+                                <p class="headerTop-title mb-0">
+                                    Sàn thương mai điện tử
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-8">
+                            <div class="user-info text-end">
+                              <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#myModal">
+                                <a
+                                    href="#"
+                                    class="text-decoration-none d-flex justify-content-end gap-1 align-items-center text-white"
+                                >
+                                    <i class="bi bi-person-fill"></i>
+                                    <span>Đăng nhập</span>
+                                </a>
+                              </button>
+                              <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#myModal2">
+                                <a
+                                    href="#"
+                                    class="text-decoration-none d-flex justify-content-end gap-1 align-items-center text-white"
+                                >
+                                    <i class="bi bi-person-fill"></i>
+                                    <span>Đăng ký</span>
+                                </a>
+                              </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header-nav">
+                <div class="container mx-auto">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <a href="#">
+                                <img
+                                    src="./img/the-gioi-do-gia-dung-hmd-logo-1538908574.webp"
+                                    style="max-width: 100%"
+                                    class="logo img-respondsive"
+                                    alt=""
+                                />
+                            </a>
+                        </div>
+                        <div class="col-md-9">
+                            <div
+                                class="d-flex justify-content-between align-items-center"
+                            >
+                                <form action="">
+                                    <div class="input-group">
+                                        <input
+                                            type="text"
+                                            class="form-control input"
+                                            placeholder="Tìm kiếm"
+                                            aria-label="Username"
+                                            aria-describedby="basic-addon1"
+                                        />
+                                        <div
+                                            style="border-radius: 0 10px 10px 0"
+                                            class="input-group-prepend bg-dark rounded-right"
+                                        >
+                                            <span
+                                                style="height: 45px"
+                                                class="input-group-text bg-dark border-dark rounded-right"
+                                                id="basic-addon1"
+                                            >
+                                                <i
+                                                    class="bi bi-search text-white"
+                                                ></i>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </form>
+                                <div class="d-flex align-items-center">
+                                    <div class="d-flex flex-column">
+                                        <p class="mb-1 text-white fs-6">
+                                            Hỗ trợ khách hàng
+                                        </p>
+                                        <p class="mb-1 text-white fs-6">
+                                            098.456.0707-09317.456.44
+                                        </p>
+                                    </div>
+                                    <span class="contacts"></span>
+                                    <div
+                                        class="d-flex align-items-center gap-2"
+                                    >
+                                        <i
+                                            class="bi bi-basket fs-4 text-white"
+                                        ></i>
+                                        <span class="text-white"
+                                            >Giỏ hàng (0)</span
+                                        >
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header-menu container">
+                <div class="row px-2">
+                    <div class="col-md-3 p-0">
+                        <div class="d-flex align-items-center bg-dark h-100">
+                            <div class="d-flex align-items-center px-4">
+                                <!-- icon menu -->
+                                <i class="bi bi-list-ul"></i>
+                                <span class="text-white">Danh muc chinh</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-9 p-0">
+                        <nav
+                            class="navbar navbar-expand-lg navbar-light bg-light"
+                        >
+                            <button
+                                class="navbar-toggler"
+                                type="button"
+                                data-toggle="collapse"
+                                data-target="#navbarSupportedContent"
+                                aria-controls="navbarSupportedContent"
+                                aria-expanded="false"
+                                aria-label="Toggle navigation"
+                            >
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div
+                                class="collapse navbar-collapse"
+                                id="navbarSupportedContent"
+                            >
+                                <ul class="navbar-nav mr-auto d-flex justify-content-around w-100">
+                                    <li class="nav-item active">
+                                        <a class="nav-link" href="#"
+                                            >Trang chủ
+                                            <span class="sr-only"
+                                                >(current)</span
+                                            ></a
+                                        >
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#"
+                                            >Giới thiệu</a
+                                        >
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#"
+                                            >Sản phẩm</a
+                                        >
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="./tintuc.html">Tin tức</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Hỗ trợ</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- =========================================end header======================================= -->
+        <main>
+            <div class="container">
+                <div class="row mt-2 mb-4">
+                    <div class="col">
+                      <h2 class="text-center">Nội Thất</h2>
+                      <h4 class="text-center">Trang chủ/ Nội thất</h4>
+                    </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-3">
+                    <div class="card">
+                      <div class="card-body">
+                        <h3 class="text-uppercase">Nội thất</h3>
+                        <ul class="list-group">
+                          <li class="list-group-item">
+                            <a href="#">Nội thất</a>
+                          </li>
+                          <li class="list-group-item">
+                            <a href="#">Nội thất</a>
+                          </li>
+                          <li class="list-group-item">
+                            <a href="#">Nội thất</a>
+                          </li>
+                          <li class="list-group-item">
+                            <a href="#">Nội thất</a>
+                          </li>
+                          <li class="list-group-item">
+                            <a href="#">Nội thất</a>
+                          </li>
+                      </div>
+                    </div>
+                    <div class="card my-3">
+                      <div class="card-body">
+                        <h3 class="text-uppercase">lọc theo</h3>
+                        <button type="button" name="" id="" class="btn btn-dark my-1">
+                          <i class="fas fa-sort-amount-up"></i>
+                          Xóa tất cả
+                        </button>
+                        <ul class="list-group mb-3">
+                          <h5>Danh mục</h5>
+                          <!-- list group checkbox -->
+                          <li class="list-group-item">
+                            <div class="form-check">
+                              <input
+                                class="form-check-input"
+                                type="checkbox"
+                                value=""
+                                id="defaultCheck1"
+                              />
+                              <label class="form-check-label" for="defaultCheck1">
+                                Nội thất
+                              </label>
+                            </div>
+                          </li>
+                          <li class="list-group-item">
+                            <div class="form-check">
+                              <input
+                                class="form-check-input"
+                                type="checkbox"
+                                value=""
+                                id="defaultCheck1"
+                              />
+                              <label class="form-check-label" for="defaultCheck1">
+                                Nội thất
+                              </label>
+                            </div>
+                          </li>
+                          <li class="list-group-item">
+                            <div class="form-check">
+                              <input
+                                class="form-check-input"
+                                type="checkbox"
+                                value=""
+                                id="defaultCheck1"
+                              />
+                              <label class="form-check-label" for="defaultCheck1">
+                                Nội thất
+                              </label>
+                            </div>
+                          </li>
+                          <li class="list-group-item">
+                            <div class="form-check">
+                              <input
+                                class="form-check-input"
+                                type="checkbox"
+                                value=""
+                                id="defaultCheck1"
+                              />
+                              <label class="form-check-label" for="defaultCheck1">
+                                Nội thất
+                              </label>
+                            </div>
+                          </li>
+                        </ul>
+                        <ul class="list-group mb-3">
+                          <h5>Danh mục</h5>
+                          <!-- list group checkbox -->
+                          <li class="list-group-item">
+                            <div class="form-check">
+                              <input
+                                class="form-check-input"
+                                type="checkbox"
+                                value=""
+                                id="defaultCheck1"
+                              />
+                              <label class="form-check-label" for="defaultCheck1">
+                                Nội thất
+                              </label>
+                            </div>
+                          </li>
+                          <li class="list-group-item">
+                            <div class="form-check">
+                              <input
+                                class="form-check-input"
+                                type="checkbox"
+                                value=""
+                                id="defaultCheck1"
+                              />
+                              <label class="form-check-label" for="defaultCheck1">
+                                Nội thất
+                              </label>
+                            </div>
+                          </li>
+                          <li class="list-group-item">
+                            <div class="form-check">
+                              <input
+                                class="form-check-input"
+                                type="checkbox"
+                                value=""
+                                id="defaultCheck1"
+                              />
+                              <label class="form-check-label" for="defaultCheck1">
+                                Nội thất
+                              </label>
+                            </div>
+                          </li>
+                          <li class="list-group-item">
+                            <div class="form-check">
+                              <input
+                                class="form-check-input"
+                                type="checkbox"
+                                value=""
+                                id="defaultCheck1"
+                              />
+                              <label class="form-check-label" for="defaultCheck1">
+                                Nội thất
+                              </label>
+                            </div>
+                          </li>
+                        </ul>
+                        <ul class="list-group mb-3">
+                          <h5>Danh mục</h5>
+                          <!-- list group checkbox -->
+                          <li class="list-group-item">
+                            <div class="form-check">
+                              <input
+                                class="form-check-input"
+                                type="checkbox"
+                                value=""
+                                id="defaultCheck1"
+                              />
+                              <label class="form-check-label" for="defaultCheck1">
+                                Nội thất
+                              </label>
+                            </div>
+                          </li>
+                          <li class="list-group-item">
+                            <div class="form-check">
+                              <input
+                                class="form-check-input"
+                                type="checkbox"
+                                value=""
+                                id="defaultCheck1"
+                              />
+                              <label class="form-check-label" for="defaultCheck1">
+                                Nội thất
+                              </label>
+                            </div>
+                          </li>
+                          <li class="list-group-item">
+                            <div class="form-check">
+                              <input
+                                class="form-check-input"
+                                type="checkbox"
+                                value=""
+                                id="defaultCheck1"
+                              />
+                              <label class="form-check-label" for="defaultCheck1">
+                                Nội thất
+                              </label>
+                            </div>
+                          </li>
+                          <li class="list-group-item">
+                            <div class="form-check">
+                              <input
+                                class="form-check-input"
+                                type="checkbox"
+                                value=""
+                                id="defaultCheck1"
+                              />
+                              <label class="form-check-label" for="defaultCheck1">
+                                Nội thất
+                              </label>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div>
+                      <!-- img banner -->
+                      <img
+                        src="https://source.unsplash.com/random"
+                        alt=""
+                        class="img-fluid"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-md-9">
+                    <div class="card text-left">
+                      <div class="card-body">
+                        <h4 class="card-title">Title</h4>
+                        <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur rerum, fuga culpa nemo illum pariatur repellat, quaerat, iste quasi debitis nam obcaecati molestias harum doloribus repellendus consequuntur perspiciatis sit temporibus.</p>
+                        <img class="card-img-top img-fluid" src="https://source.unsplash.com/random/50x20" alt="">
+                      </div>
+                    </div>
+                    <div class="alert alert-light my-3" role="alert">
+                      <h3 class="alert-title text-center text-uppercase">Phan loai danh muc con</h3>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-3">
+                        <div class="card text-center">
+                          <img class="card-img-top" src="https://source.unsplash.com/random/50x50" alt="">
+                          <div class="card-body">
+                            <h4 class="card-title">Lorem ipsum dolor sit.</h4>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-3">
+                        <div class="card text-center">
+                          <img class="card-img-top" src="https://source.unsplash.com/random/50x50" alt="">
+                          <div class="card-body">
+                            <h4 class="card-title">Lorem ipsum dolor sit.</h4>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-3">
+                        <div class="card text-center">
+                          <img class="card-img-top" src="https://source.unsplash.com/random/50x50" alt="">
+                          <div class="card-body">
+                            <h4 class="card-title">Lorem ipsum dolor sit.</h4>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-3">
+                        <div class="card text-center">
+                          <img class="card-img-top" src="https://source.unsplash.com/random/50x50" alt="">
+                          <div class="card-body">
+                            <h4 class="card-title">Lorem ipsum dolor sit.</h4>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="alert alert-light my-3 d-flex justify-content-between align-items-center" role="alert">
+
+                      <h3 class="alert-title text-uppercase">Sap Xep</h3>
+                      <!-- drop down list -->
+                      <div class="dropdown">
+                        <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown">
+                          Sap xep
+                        </button>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Link 1</a></li>
+                          <li><a class="dropdown-item" href="#">Link 2</a></li>
+                          <li><a class="dropdown-item" href="#">Link 3</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <a href="./sanpham.html" class="col-md-2 mb-3 px-1">
+                        <div class="card text-center">
+                          <img class="card-img-top" src="https://source.unsplash.com/random/50x50" alt="">
+                          <div class="card-body">
+                            <span class="card-title">Lorem ipsum dolor sit.</span>
+                            <br>
+                            <!-- cart body -->
+                            <span class="card-title text-danger">70.000</span>
+                          </div>
+                        </div>
+                      </a>
+                      <a href="./sanpham.html" class="col-md-2 mb-3 px-1">
+                        <div class="card text-center">
+                          <img class="card-img-top" src="https://source.unsplash.com/random/50x50" alt="">
+                          <div class="card-body">
+                            <span class="card-title">Lorem ipsum dolor sit.</span>
+                            <br>
+                            <!-- cart body -->
+                            <span class="card-title text-danger">70.000</span>
+                          </div>
+                        </div>
+                      </a>
+                      <a href="./sanpham.html" class="col-md-2 mb-3 px-1">
+                        <div class="card text-center">
+                          <img class="card-img-top" src="https://source.unsplash.com/random/50x50" alt="">
+                          <div class="card-body">
+                            <span class="card-title">Lorem ipsum dolor sit.</span>
+                            <br>
+                            <!-- cart body -->
+                            <span class="card-title text-danger">70.000</span>
+                          </div>
+                        </div>
+                      </a>
+                      <a href="./sanpham.html" class="col-md-2 mb-3 px-1">
+                        <div class="card text-center">
+                          <img class="card-img-top" src="https://source.unsplash.com/random/50x50" alt="">
+                          <div class="card-body">
+                            <span class="card-title">Lorem ipsum dolor sit.</span>
+                            <br>
+                            <!-- cart body -->
+                            <span class="card-title text-danger">70.000</span>
+                          </div>
+                        </div>
+                      </a>
+                      <a href="./sanpham.html" class="col-md-2 mb-3 px-1">
+                        <div class="card text-center">
+                          <img class="card-img-top" src="https://source.unsplash.com/random/50x50" alt="">
+                          <div class="card-body">
+                            <span class="card-title">Lorem ipsum dolor sit.</span>
+                            <br>
+                            <!-- cart body -->
+                            <span class="card-title text-danger">70.000</span>
+                          </div>
+                        </div>
+                      </a>
+                      <a href="./sanpham.html" class="col-md-2 mb-3 px-1">
+                        <div class="card text-center">
+                          <img class="card-img-top" src="https://source.unsplash.com/random/50x50" alt="">
+                          <div class="card-body">
+                            <span class="card-title">Lorem ipsum dolor sit.</span>
+                            <br>
+                            <!-- cart body -->
+                            <span class="card-title text-danger">70.000</span>
+                          </div>
+                        </div>
+                      </a>
+                      <a href="./sanpham.html" class="col-md-2 mb-3 px-1">
+                        <div class="card text-center">
+                          <img class="card-img-top" src="https://source.unsplash.com/random/50x50" alt="">
+                          <div class="card-body">
+                            <span class="card-title">Lorem ipsum dolor sit.</span>
+                            <br>
+                            <!-- cart body -->
+                            <span class="card-title text-danger">70.000</span>
+                          </div>
+                        </div>
+                      </a>
+                      <a href="./sanpham.html" class="col-md-2 mb-3 px-1">
+                        <div class="card text-center">
+                          <img class="card-img-top" src="https://source.unsplash.com/random/50x50" alt="">
+                          <div class="card-body">
+                            <span class="card-title">Lorem ipsum dolor sit.</span>
+                            <br>
+                            <!-- cart body -->
+                            <span class="card-title text-danger">70.000</span>
+                          </div>
+                        </div>
+                      </a>
+                      <a href="./sanpham.html" class="col-md-2 mb-3 px-1">
+                        <div class="card text-center">
+                          <img class="card-img-top" src="https://source.unsplash.com/random/50x50" alt="">
+                          <div class="card-body">
+                            <span class="card-title">Lorem ipsum dolor sit.</span>
+                            <br>
+                            <!-- cart body -->
+                            <span class="card-title text-danger">70.000</span>
+                          </div>
+                        </div>
+                      </a>
+                      <a href="./sanpham.html" class="col-md-2 mb-3 px-1">
+                        <div class="card text-center">
+                          <img class="card-img-top" src="https://source.unsplash.com/random/50x50" alt="">
+                          <div class="card-body">
+                            <span class="card-title">Lorem ipsum dolor sit.</span>
+                            <br>
+                            <!-- cart body -->
+                            <span class="card-title text-danger">70.000</span>
+                          </div>
+                        </div>
+                      </a>
+                      <a href="./sanpham.html" class="col-md-2 mb-3 px-1">
+                        <div class="card text-center">
+                          <img class="card-img-top" src="https://source.unsplash.com/random/50x50" alt="">
+                          <div class="card-body">
+                            <span class="card-title">Lorem ipsum dolor sit.</span>
+                            <br>
+                            <!-- cart body -->
+                            <span class="card-title text-danger">70.000</span>
+                          </div>
+                        </div>
+                      </a>
+                      <a href="./sanpham.html" class="col-md-2 mb-3 px-1">
+                        <div class="card text-center">
+                          <img class="card-img-top" src="https://source.unsplash.com/random/50x50" alt="">
+                          <div class="card-body">
+                            <span class="card-title">Lorem ipsum dolor sit.</span>
+                            <br>
+                            <!-- cart body -->
+                            <span class="card-title text-danger">70.000</span>
+                          </div>
+                        </div>
+                      </a>
+                      
+                      
+                      
+                    </div>
+                    <div class="row">
+                      <ul class="pagination justify-content-center">
+                        <li class="page-item"><a class="page-link" href="javascript:void(0);">Previous</a></li>
+                        <li class="page-item"><a class="page-link" href="javascript:void(0);">1</a></li>
+                        <li class="page-item"><a class="page-link" href="javascript:void(0);">2</a></li>
+                        <li class="page-item"><a class="page-link" href="javascript:void(0);">Next</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </main>
+        <!-- =========================================start header===================================== -->
+        <footer class="w-100 py-4">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="d-flex flex-column">
+                            <p class="text-white">Sàn thương mai điện tử HMD</p>
+                            <a href="#" style="height: 77px">
+                                <img src="./img/bct-logo_1.webp" alt="" />
+                            </a>
+                            <p class="text-white mb-0 mt-4">
+                                Hà Nội GpKD:0108232662,Sở Kế hoạch-Đầu tư HN
+                                phone Hotline: 098.456.0707 - 09317.456.44 email
+                                Email: hmd@thegioidogiadung.com.vn
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="d-flex flex-column gap-3">
+                            <div
+                                class="d-flex gap-3 align-items-center flex-row"
+                            >
+                                <div class="d-flex gap-2 align-items-center">
+                                    <i
+                                        class="bi bi-cursor-fill text-danger fs-1"
+                                    ></i>
+                                    <h3 class="text-white mb-0">
+                                        Thế giới đồ da dụng
+                                    </h3>
+                                </div>
+                                <div
+                                    style="width: 60%; height: 80%"
+                                    class="input-group"
+                                >
+                                    <input
+                                        type="text"
+                                        style="
+                                            background: rgba(
+                                                255,
+                                                255,
+                                                255,
+                                                0.2
+                                            );
+                                        "
+                                        class="form-control"
+                                        placeholder="Địa chỉ email"
+                                        aria-label="Username"
+                                        aria-describedby="basic-addon1"
+                                    />
+                                    <span
+                                        class="input-group-text bg-danger text-white"
+                                        id="basic-addon1"
+                                        >Đăng kí</span
+                                    >
+                                </div>
+                            </div>
+                            <div
+                                class="d-flex justify-content-between text-white"
+                            >
+                                <ul
+                                    style="list-style-type: none"
+                                    class="d-flex flex-column"
+                                >
+                                    <h4>Sàn TMĐT HMD</h4>
+                                    <li>
+                                        <a
+                                            href="#"
+                                            class="text-decoration-none"
+                                        >
+                                            Tổng quan về Sàn HMD
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="text-decoration-none"
+                                            >Chính sách giao hàng</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a href="#" class="text-decoration-none"
+                                            >Chính sách đổi trả hàng</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a href="#" class="text-decoration-none"
+                                            >Chính sách thanh toán</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a href="#" class="text-decoration-none"
+                                            >Chính sách bảo mật thông tin
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="text-decoration-none"
+                                            >Giải quyết tranh chấp khiếu nại</a
+                                        >
+                                    </li>
+                                </ul>
+                                <ul
+                                    style="list-style-type: none"
+                                    class="d-flex flex-column"
+                                >
+                                    <h4>Nhà bán hàng</h4>
+                                    <li>
+                                        <a
+                                            href="#"
+                                            class="text-decoration-none"
+                                        >
+                                            Quy định đối với nhà bán hàng
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="text-decoration-none"
+                                            >Hướng dẫn sử dụng gian hàng</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a href="#" class="text-decoration-none"
+                                            >Tạo gian hàng</a
+                                        >
+                                    </li>
+                                </ul>
+                                <ul
+                                    style="list-style-type: none"
+                                    class="d-flex flex-column"
+                                >
+                                    <h4>Tài khoản của bạn</h4>
+                                    <li>
+                                        <a
+                                            href="#"
+                                            class="text-decoration-none"
+                                        >
+                                            Thông tin cá nhân
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="text-decoration-none"
+                                            >Hàng đổi/ Trả lại</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a href="#" class="text-decoration-none"
+                                            >Đơn hàng
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="text-decoration-none"
+                                            >Biên lai ghi có</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a href="#" class="text-decoration-none"
+                                            >Địa chỉ
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="text-decoration-none"
+                                            >Mã giảm giá khuyến mại</a
+                                        >
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- buttton show modal -->
+        <div
+            class="modal fade"
+            id="myModal"
+            tabindex="-1"
+            role="dialog"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+        >
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">
+                            Đăng nhập
+                        </h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-group mb-4">
+                                <label for="exampleInputEmail1" class="h4">Email</label>
+                                <input
+                                    type="email"
+                                    class="form-control"
+                                    id="exampleInputEmail1"
+                                    aria-describedby="emailHelp"
+                                    placeholder="Enter email"
+                                />
+                                <small id="emailHelp" class="form-text text-muted">
+                                    We'll never share your email with anyone
+                                    else.
+                                </small>
+                            </div>
+                            <div class="form-group mb-4">
+                                <label for="exampleInputPassword1" class="h4">Password</label>
+                                <input
+                                    type="password"
+                                    class="form-control"
+                                    id="exampleInputPassword1"
+                                    placeholder="Password"
+                                />
+                            </div>
+                            <div class="form-group form-check">
+                                <input
+                                    type="checkbox"
+                                    class="form-check-input"
+                                    id="exampleCheck1"
+                                />
+                                <label class="form-check-label" for="exampleCheck1">
+                                    Check me out
+                                </label>
+                            </div>
+                            <button
+                                type="submit"
+                                class="btn btn-danger"
+                                style="width: 100%"
+                            >
+                                Đăng nhập
+                            </button>
+                            <hr>
+                            <div class="d-flex flex-row justify-content-end">
+                                <button class="btn btn-primary me-3">
+                                  <a href="#" class="text-decoration-none">
+                                    Quên mật khẩu
+                                </a>
+                                </button>
+                                <button  class="btn btn-warning">
+                                  <a href="#" class="text-decoration-none">
+                                    Đăng ký
+                                </a>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- modal dang ky -->
+        <div
+            class="modal fade"
+            id="myModal2"
+            tabindex="-1"
+            role="dialog"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+        >
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                  <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">
+                          Đăng ký
+                      </h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                  </div>
+                  <div class="modal-body">
+                      <form>
+                          <div class="form-group mb-4">
+                              <label for="exampleInputEmail1" class="h4">Email</label>
+                              <input
+                                  type="email"
+                                  class="form-control"
+                                  id="exampleInputEmail1"
+                                  aria-describedby="emailHelp"
+                                  placeholder="Enter email"
+                              />
+                              <small id="emailHelp" class="form-text text-muted">
+                                  We'll never share your email with anyone
+                                  else.
+                              </small>
+                          </div>
+                          <div class="form-group mb-4">
+                              <label for="exampleInputPassword1" class="h4">Password</label>
+                              <input
+                                  type="password"
+                                  class="form-control"
+                                  id="exampleInputPassword1"
+                                  placeholder="Password"
+                              />
+                          </div>
+                          <div class="form-group mb-4">
+                              <label for="exampleInputPassword1" class="h4">Nhập lại mật khẩu</label>
+                              <input
+                                  type="password"
+                                  class="form-control"
+                                  id="exampleInputPassword1"
+                                  placeholder="Password"
+                              />
+                          </div>
+                          <div class="form-group mb-4">
+                              <label for="exampleInputPassword1" class="h4">Họ và tên</label>
+                              <input
+                                  type="password"
+                                  class="form-control"
+                                  id="exampleInputPassword1"
+                                  placeholder="Password"
+                              />
+                          </div>
+                          <!-- button -->
+                          <button
+                              type="submit"
+                              class="btn btn-danger"
+                              style="width: 100%"
+                          >
+                              Đăng ký
+                          </button>
+                          <hr>
+                          <div class="d-flex flex-row justify-content-end">
+                              <button class="btn btn-primary me-3">
+                                <a href="#" class="text-decoration-none">
+                                  Quên mật khẩu
+                              </a>
+                              </button>
+                              <button  class="btn btn-warning">
+                                <a href="#" class="text-decoration-none">
+                                  Đăng nhập
+                              </a>
+                              </button>
+                          </div>
+                      </form>
+                  </div>
+              </div>
+            </div>
+        </div>
+        <!-- end modal dang ky -->
+    </body>
+    <!-- JavaScript Bundle with Popper -->
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"
+    ></script>
+</html>

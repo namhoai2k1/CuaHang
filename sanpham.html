@@ -1,0 +1,1127 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <!-- link fas 6-->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+        />
+        <!-- CSS only -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+        />
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+        />
+        <link rel="stylesheet" href="./style/header.css" />
+        <link rel="stylesheet" href="./style/footer.css" />
+        <link rel="stylesheet" href="./style/style.css" />
+    </head>
+    <body>
+        <header>
+            <div class="header-top py-2">
+                <div class="container mx-auto">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="d-flex gap-1 align-items-center">
+                                <i class="bi bi-bookmark-check"></i>
+                                <p class="headerTop-title mb-0">
+                                    Sàn thương mai điện tử
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-8">
+                            <div class="user-info text-end">
+                                <button
+                                    type="button"
+                                    class="btn btn-outline-danger"
+                                    data-bs-toggle="modal"
+                                    data-bs-target="#myModal"
+                                >
+                                    <a
+                                        href="#"
+                                        class="text-decoration-none d-flex justify-content-end gap-1 align-items-center text-white"
+                                    >
+                                        <i class="bi bi-person-fill"></i>
+                                        <span>Đăng nhập</span>
+                                    </a>
+                                </button>
+                                <button
+                                    type="button"
+                                    class="btn btn-outline-danger"
+                                    data-bs-toggle="modal"
+                                    data-bs-target="#myModal2"
+                                >
+                                    <a
+                                        href="#"
+                                        class="text-decoration-none d-flex justify-content-end gap-1 align-items-center text-white"
+                                    >
+                                        <i class="bi bi-person-fill"></i>
+                                        <span>Đăng ký</span>
+                                    </a>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header-nav">
+                <div class="container mx-auto">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <a href="#">
+                                <img
+                                    src="./img/the-gioi-do-gia-dung-hmd-logo-1538908574.webp"
+                                    style="max-width: 100%"
+                                    class="logo img-respondsive"
+                                    alt=""
+                                />
+                            </a>
+                        </div>
+                        <div class="col-md-9">
+                            <div
+                                class="d-flex justify-content-between align-items-center"
+                            >
+                                <form action="">
+                                    <div class="input-group">
+                                        <input
+                                            type="text"
+                                            class="form-control input"
+                                            placeholder="Tìm kiếm"
+                                            aria-label="Username"
+                                            aria-describedby="basic-addon1"
+                                        />
+                                        <div
+                                            style="border-radius: 0 10px 10px 0"
+                                            class="input-group-prepend bg-dark rounded-right"
+                                        >
+                                            <span
+                                                style="height: 45px"
+                                                class="input-group-text bg-dark border-dark rounded-right"
+                                                id="basic-addon1"
+                                            >
+                                                <i
+                                                    class="bi bi-search text-white"
+                                                ></i>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </form>
+                                <div class="d-flex align-items-center">
+                                    <div class="d-flex flex-column">
+                                        <p class="mb-1 text-white fs-6">
+                                            Hỗ trợ khách hàng
+                                        </p>
+                                        <p class="mb-1 text-white fs-6">
+                                            098.456.0707-09317.456.44
+                                        </p>
+                                    </div>
+                                    <span class="contacts"></span>
+                                    <div
+                                        class="d-flex align-items-center gap-2"
+                                    >
+                                        <i
+                                            class="bi bi-basket fs-4 text-white"
+                                        ></i>
+                                        <span class="text-white"
+                                            >Giỏ hàng (0)</span
+                                        >
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header-menu container">
+                <div class="row px-2">
+                    <div class="col-md-3 p-0">
+                        <div class="d-flex align-items-center bg-dark h-100">
+                            <div class="d-flex align-items-center px-4">
+                                <!-- icon menu -->
+                                <i class="bi bi-list-ul"></i>
+                                <span class="text-white">Danh muc chinh</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-9 p-0">
+                        <nav
+                            class="navbar navbar-expand-lg navbar-light bg-light"
+                        >
+                            <button
+                                class="navbar-toggler"
+                                type="button"
+                                data-toggle="collapse"
+                                data-target="#navbarSupportedContent"
+                                aria-controls="navbarSupportedContent"
+                                aria-expanded="false"
+                                aria-label="Toggle navigation"
+                            >
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div
+                                class="collapse navbar-collapse"
+                                id="navbarSupportedContent"
+                            >
+                                <ul
+                                    class="navbar-nav mr-auto d-flex justify-content-around w-100"
+                                >
+                                    <li class="nav-item active">
+                                        <a class="nav-link" href="./index.html"
+                                            >Trang chủ
+                                            <span class="sr-only"
+                                                >(current)</span
+                                            ></a
+                                        >
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#"
+                                            >Giới thiệu</a
+                                        >
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="./listsanpham.html"
+                                            >Sản phẩm</a
+                                        >
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="./tintuc.html">Tin tức</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Hỗ trợ</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- =========================================end header======================================= -->
+        <main>
+            <div class="container-fluid">
+                <div class="row mt-2 mb-4 px-5">
+                    <div class="col">
+                        <h2 class="text-center">Sản phẩm</h2>
+                        <h4 class="text-center">Trang chủ/ Sản phẩm</h4>
+                    </div>
+                </div>
+                <div class="row px-5">
+                    <div class="col-md-6">
+                        <div class="row">
+                            <div class="col-3">
+                                <div
+                                    class="d-flex flex-column align-items-center justify-content-around h-100"
+                                >
+                                    <div class="border mx-3">
+                                        <img
+                                            src="https://source.unsplash.com/random/100x100"
+                                            style="max-width: 100%"
+                                            class="img-responsive"
+                                            alt=""
+                                        />
+                                    </div>
+                                    <div class="border mx-3">
+                                        <img
+                                            src="https://source.unsplash.com/random/100x100"
+                                            style="max-width: 100%"
+                                            class="img-responsive"
+                                            alt=""
+                                        />
+                                    </div>
+                                    <div class="border mx-3">
+                                        <img
+                                            src="https://source.unsplash.com/random/100x100"
+                                            style="max-width: 100%"
+                                            class="img-responsive"
+                                            alt=""
+                                        />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-9">
+                                <div class="border shadow-lg">
+                                    <img
+                                        src="https://source.unsplash.com/random/500x500"
+                                        style="max-width: 100%"
+                                        class="img-responsive"
+                                        alt=""
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <h1 class="text-uppercase h4">
+                            Lorem ipsum dolor sit.
+                        </h1>
+                        <!-- price-->
+                        <span class="text-uppercase h4 text-danger mt-3"
+                            >$ 200.000.000</span
+                        >
+                        <!-- ho tro khac hang -->
+                        <div class="d-flex align-items-center mt-3">
+                            <button
+                                class="btn btn-danger d-flex align-items-center gap-2"
+                            >
+                                <i class="bi bi-telephone-fill h3"></i>
+                                <span class="text-light">Goi ngay</span>
+                            </button>
+                            <span class="contacts"></span>
+                            <div class="d-flex flex-column">
+                                <p class="mb-1 text-uppercase">
+                                    Hỗ trợ khách hàng
+                                </p>
+                                <p class="mb-1 text-uppercase">
+                                    098.456.0707-09317.456.44
+                                </p>
+                            </div>
+                        </div>
+                        <!-- them so luong san pham -->
+                        <div class="d-flex mt-3  w-75 align-items-end gap-3">
+                            <div class="d-flex flex-column">
+                                <p class="mb-1 text-uppercase">Số lượng</p>
+                                <div class="d-flex btn-group">
+                                    <button class="btn btn-danger d-flex gap-2">
+                                        <span>+</span>
+                                    </button>
+                                    <input
+                                        type="text"
+                                        class="form-control"
+                                        value="1"
+                                        style="width: 50px"
+                                    />
+                                    <button class="btn btn-danger d-flex gap-2">
+                                        <span>-</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <button
+                                class="btn btn-outline-danger d-flex gap-2"
+                                style="height: 38px;"
+                            >
+                                <i class="bi bi-cart-plus h5"></i>
+                                <span class="text-danger">Thêm vào giỏ</span>
+                            </button>
+                        </div>
+                        <!-- chia se -->
+                        <div class="d-flex mt-5 align-items-center gap-3">
+                            <span class="h5">Chia se</span>
+                            <a>
+                                <img src="https://source.unsplash.com/random/50x50" alt="" class="img-responsive rounded-circle">
+                            </a>
+                            <a>
+                                <img src="https://source.unsplash.com/random/50x50" alt="" class="img-responsive rounded-circle">
+                            </a>
+                            <a>
+                                <img src="https://source.unsplash.com/random/50x50" alt="" class="img-responsive rounded-circle">
+                            </a>
+                            <a>
+                                <img src="https://source.unsplash.com/random/50x50" alt="" class="img-responsive rounded-circle">
+                            </a>
+                        </div>
+                        <!-- bao ve quyen loi kac hang, giao hanh nhanh kiem thu hang hoa -->
+                        <div class="d-flex gap-3 align-items-center mt-5 border-bottom border-4 pb-5 w-75">
+                            <div>
+                                <!-- icon khien chan -->
+                                <i class="bi bi-exclamation-octagon-fill"></i>
+                                <span class="ms-2">Bảo vệ Quyền lợi Khách hàng</span>
+                            </div>
+                            <div>
+                                <!-- icon khien chan -->
+                                <i class="bi bi-exclamation-octagon-fill"></i>
+                                <span class="ms-2">Giao hàng nhanh, Bảo hiểm Hàng hóa</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row px-5 mt-5">
+                        <div class="card p-0">
+                            <div
+                                class="card-header bg-light border-danger border-bottom-3"
+                            >
+                                <div
+                                    class="btn-group-lg"
+                                    role="group"
+                                    aria-label="Basic radio toggle button group"
+                                >
+                                    <input
+                                        type="radio"
+                                        class="btn-check"
+                                        name="btnradio"
+                                        id="btnradio1"
+                                        autocomplete="off"
+                                        checked
+                                    />
+                                    <label
+                                        class="btn btn-outline-danger text-uppercase"
+                                        for="btnradio1"
+                                        >mô tả</label
+                                    >
+                                    <input
+                                        type="radio"
+                                        class="btn-check"
+                                        name="btnradio"
+                                        id="btnradio2"
+                                        autocomplete="off"
+                                    />
+                                    <label
+                                        class="btn btn-outline-danger text-uppercase"
+                                        for="btnradio2"
+                                        >chi tiet sản phẩm</label
+                                    >
+                                    <input
+                                        type="radio"
+                                        class="btn-check"
+                                        name="btnradio"
+                                        id="btnradio3"
+                                        autocomplete="off"
+                                    />
+                                    <label
+                                        class="btn btn-outline-danger text-uppercase"
+                                        for="btnradio3"
+                                        >ý kiến/ đánh giá</label
+                                    >
+                                </div>
+                            </div>
+                            <div class="cart-body px-3">
+                                <!-- mo ta san pham -->
+                                <div class="product-description">
+                                    <p
+                                        style="
+                                            margin: 0px;
+                                            padding: 5px 0px;
+                                            color: #333333;
+                                            font-family: MyriadPro;
+                                            font-size: 14px;
+                                        "
+                                    >
+                                        <span style="font-size: 16px"
+                                            >-&nbsp;<span
+                                                style="font-weight: bold"
+                                                >Tên sản phẩm</span
+                                            >:&nbsp;Giường Trẻ Em xe Funny
+                                            Car</span
+                                        >
+                                    </p>
+                                    <p
+                                        style="
+                                            margin: 0px;
+                                            padding: 5px 0px;
+                                            color: #333333;
+                                            font-family: MyriadPro;
+                                            font-size: 14px;
+                                        "
+                                    >
+                                        <span style="font-size: 16px"
+                                            >-&nbsp;<span
+                                                style="font-weight: bold"
+                                                >Mã sản phẩm</span
+                                            >: GD12</span
+                                        >
+                                    </p>
+                                    <p
+                                        style="
+                                            margin: 0px;
+                                            padding: 5px 0px;
+                                            color: #333333;
+                                            font-family: MyriadPro;
+                                            font-size: 14px;
+                                        "
+                                    >
+                                        <span style="font-size: 16px"
+                                            >-<span style="font-weight: bold"
+                                                >&nbsp;Kích thước sản phẩm</span
+                                            >: (Dài x Rộng x Cao)</span
+                                        >
+                                    </p>
+                                    <p
+                                        style="
+                                            margin: 0px;
+                                            padding: 5px 0px;
+                                            color: #333333;
+                                            font-family: MyriadPro;
+                                            font-size: 14px;
+                                        "
+                                    >
+                                        <span style="font-size: 16px"
+                                            >&nbsp;.
+                                            1856x1036x760&nbsp;&nbsp;</span
+                                        >
+                                    </p>
+                                    <p
+                                        style="
+                                            margin: 0px;
+                                            padding: 5px 0px;
+                                            color: #333333;
+                                            font-family: MyriadPro;
+                                            font-size: 14px;
+                                        "
+                                    >
+                                        <span style="font-size: 16px"
+                                            >-&nbsp;<span
+                                                style="font-weight: bold"
+                                                >Chất liệu sản phẩm</span
+                                            >:</span
+                                        >
+                                    </p>
+                                    <p
+                                        style="
+                                            margin: 0px;
+                                            padding: 5px 0px;
+                                            color: #333333;
+                                            font-family: MyriadPro;
+                                            font-size: 14px;
+                                        "
+                                    >
+                                        <span style="font-size: 16px"
+                                            >· Gỗ MDF nhập khẩu 100%
+                                            Malaysia.</span
+                                        >
+                                    </p>
+                                    <p
+                                        style="
+                                            margin: 0px;
+                                            padding: 5px 0px;
+                                            color: #333333;
+                                            font-family: MyriadPro;
+                                            font-size: 14px;
+                                        "
+                                    >
+                                        <span style="font-size: 16px"
+                                            >· Sử dụng sơn không chì theo công
+                                            nghệ 2K, chống trầy xước, chống bám
+                                            bẩn và dễ dàng lau chùi.</span
+                                        >
+                                    </p>
+                                    <p
+                                        style="
+                                            margin: 0px;
+                                            padding: 5px 0px;
+                                            color: #333333;
+                                            font-family: MyriadPro;
+                                            font-size: 14px;
+                                        "
+                                    >
+                                        <span style="font-size: 16px"
+                                            >· Họa tiết hình ảnh được in phun
+                                            trực tiếp lên bề mặt gỗ, màu sắc
+                                            bắt&nbsp;mắt, không bong tróc và bền
+                                            màu với thời gian.</span
+                                        >
+                                    </p>
+                                    <p
+                                        style="
+                                            margin: 0px;
+                                            padding: 5px 0px;
+                                            color: #333333;
+                                            font-family: MyriadPro;
+                                            font-size: 14px;
+                                        "
+                                    >
+                                        <span style="font-size: 16px"
+                                            >· Phụ kiện: bản lề, ray trượt giảm
+                                            chấn được nhập khẩu từ Châu
+                                            Âu.</span
+                                        >
+                                    </p>
+                                    <p
+                                        style="
+                                            margin: 0px;
+                                            padding: 5px 0px;
+                                            color: #333333;
+                                            font-family: MyriadPro;
+                                            font-size: 14px;
+                                        "
+                                    >
+                                        <span style="font-size: 16px"
+                                            >-&nbsp;<span
+                                                style="font-weight: bold"
+                                                >Màu sắc</span
+                                            >:&nbsp;</span
+                                        >
+                                    </p>
+                                    <p
+                                        style="
+                                            margin: 0px;
+                                            padding: 5px 0px;
+                                            color: #333333;
+                                            font-family: MyriadPro;
+                                            font-size: 14px;
+                                        "
+                                    >
+                                        <span style="font-size: 16px"
+                                            >-&nbsp;<span
+                                                style="font-weight: bold"
+                                                >Khả năng chịu lực của sản
+                                                phẩm</span
+                                            >: 250kg.</span
+                                        >
+                                    </p>
+                                    <p
+                                        style="
+                                            margin: 0px;
+                                            padding: 5px 0px;
+                                            color: #333333;
+                                            font-family: MyriadPro;
+                                            font-size: 14px;
+                                        "
+                                    >
+                                        <span style="font-size: 16px"
+                                            >-&nbsp;<span
+                                                style="font-weight: bold"
+                                                >Bảo hành</span
+                                            >: 12 tháng.</span
+                                        >
+                                    </p>
+                                    <p
+                                        style="
+                                            margin: 0px;
+                                            padding: 5px 0px;
+                                            color: #333333;
+                                            font-family: MyriadPro;
+                                            font-size: 14px;
+                                        "
+                                    >
+                                        <span style="font-size: 16px"
+                                            >-&nbsp;<span
+                                                style="font-weight: bold"
+                                                >Giao hàng</span
+                                            >:</span
+                                        >
+                                    </p>
+                                    <p
+                                        style="
+                                            margin: 0px;
+                                            padding: 5px 0px;
+                                            color: #333333;
+                                            font-family: MyriadPro;
+                                            font-size: 14px;
+                                        "
+                                    >
+                                        <span style="font-size: 16px"
+                                            >· Giao hàng và lắp đặt miễn phí khu
+                                            vực TP. Hồ Chí Minh</span
+                                        >
+                                    </p>
+                                    <p
+                                        style="
+                                            margin: 0px;
+                                            padding: 5px 0px;
+                                            color: #333333;
+                                            font-family: MyriadPro;
+                                            font-size: 14px;
+                                        "
+                                    >
+                                        <span style="font-size: 16px"
+                                            >· Thời gian giao hàng trong vòng
+                                            2-5 ngày.</span
+                                        >
+                                    </p>
+                                    <p
+                                        style="
+                                            margin: 0px;
+                                            padding: 5px 0px;
+                                            color: #333333;
+                                            font-family: MyriadPro;
+                                            font-size: 14px;
+                                        "
+                                    ></p>
+                                    <p
+                                        style="
+                                            margin: 0px;
+                                            padding: 5px 0px;
+                                            color: #333333;
+                                            font-family: MyriadPro;
+                                            font-size: 14px;
+                                        "
+                                    >
+                                        <span style="font-size: 16px"
+                                            ><span style="font-weight: bold"
+                                                >Tính thẩm mỹ và độ an toàn
+                                                cao</span
+                                            ></span
+                                        >
+                                    </p>
+                                    <p
+                                        style="
+                                            margin: 0px;
+                                            padding: 5px 0px;
+                                            color: #333333;
+                                            font-family: MyriadPro;
+                                            font-size: 14px;
+                                            text-align: justify;
+                                        "
+                                    >
+                                        <span style="font-size: 16px"
+                                            >- Họa tiết hình ảnh được in phun
+                                            trực tiếp lên bề mặt gỗ, phủ bóng
+                                            theo công nghệ 2K, đạt tiêu chuẩn
+                                            Đông Nam Á. Sản phẩm được hoàn thành
+                                            với bề mặt bóng đẹp, dễ lau chùi,
+                                            chống bám bẩn và hạn chế trầy
+                                            xước.</span
+                                        >
+                                    </p>
+                                    <p
+                                        style="
+                                            margin: 0px;
+                                            padding: 5px 0px;
+                                            color: #333333;
+                                            font-family: MyriadPro;
+                                            font-size: 14px;
+                                            text-align: justify;
+                                        "
+                                    >
+                                        <span style="font-size: 16px"
+                                            >- Chất liệu: gỗ MDF dòng E1 nhập
+                                            khẩu từ Malaysia, đã qua xử lý chống
+                                            cong vênh, mối mọt bằng công nghệ
+                                            của Đức, chất lượng không thua kém
+                                            gỗ tự nhiên 100%.</span
+                                        >
+                                    </p>
+                                    <p
+                                        style="
+                                            margin: 0px;
+                                            padding: 5px 0px;
+                                            color: #333333;
+                                            font-family: MyriadPro;
+                                            font-size: 14px;
+                                            text-align: justify;
+                                        "
+                                    >
+                                        <span style="font-size: 16px"
+                                            >- Sử dụng loại sơn không chì, có
+                                            kiểm định của cơ quan chức năng, đảm
+                                            bảo an toàn cho sức khỏe và thân
+                                            thiên với môi trường. Sản phẩm được
+                                            sơn phủ rất kỹ ở các phần khuất như
+                                            phía trong, sau, gầm và nóc, các góc
+                                            khuất.</span
+                                        >
+                                    </p>
+                                    <p
+                                        style="
+                                            margin: 0px;
+                                            padding: 5px 0px;
+                                            color: #333333;
+                                            font-family: MyriadPro;
+                                            font-size: 14px;
+                                            text-align: justify;
+                                        "
+                                    >
+                                        <span style="font-size: 16px"
+                                            >- Phụ kiện: bản lề, ray trượt giảm
+                                            chấn được nhập khẩu trực tiếp từ
+                                            Châu Âu.</span
+                                        >
+                                    </p>
+                                    <p
+                                        style="
+                                            margin: 0px;
+                                            padding: 5px 0px;
+                                            color: #333333;
+                                            font-family: MyriadPro;
+                                            font-size: 14px;
+                                            text-align: justify;
+                                        "
+                                    ></p>
+                                    <p
+                                        style="
+                                            margin: 0px;
+                                            padding: 5px 0px;
+                                            color: #333333;
+                                            font-family: MyriadPro;
+                                            font-size: 14px;
+                                            text-align: justify;
+                                        "
+                                    >
+                                        <span style="font-size: 16px"
+                                            >- Kết cấu giường theo Module sản
+                                            xuất bằng robot hiện đại, đảm bảo an
+                                            toàn về mặt kỹ thuất trong suốt quá
+                                            trình sử dụng.</span
+                                        >
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <!-- =========================================start header===================================== -->
+        <footer class="w-100 py-4">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="d-flex flex-column">
+                            <p class="text-white">Sàn thương mai điện tử HMD</p>
+                            <a href="#" style="height: 77px">
+                                <img src="./img/bct-logo_1.webp" alt="" />
+                            </a>
+                            <p class="text-white mb-0 mt-4">
+                                Hà Nội GpKD:0108232662,Sở Kế hoạch-Đầu tư HN
+                                phone Hotline: 098.456.0707 - 09317.456.44 email
+                                Email: hmd@thegioidogiadung.com.vn
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="d-flex flex-column gap-3">
+                            <div
+                                class="d-flex gap-3 align-items-center flex-row"
+                            >
+                                <div class="d-flex gap-2 align-items-center">
+                                    <i
+                                        class="bi bi-cursor-fill text-danger fs-1"
+                                    ></i>
+                                    <h3 class="text-white mb-0">
+                                        Thế giới đồ da dụng
+                                    </h3>
+                                </div>
+                                <div
+                                    style="width: 60%; height: 80%"
+                                    class="input-group"
+                                >
+                                    <input
+                                        type="text"
+                                        style="
+                                            background: rgba(
+                                                255,
+                                                255,
+                                                255,
+                                                0.2
+                                            );
+                                        "
+                                        class="form-control"
+                                        placeholder="Địa chỉ email"
+                                        aria-label="Username"
+                                        aria-describedby="basic-addon1"
+                                    />
+                                    <span
+                                        class="input-group-text bg-danger text-white"
+                                        id="basic-addon1"
+                                        >Đăng kí</span
+                                    >
+                                </div>
+                            </div>
+                            <div
+                                class="d-flex justify-content-between text-white"
+                            >
+                                <ul
+                                    style="list-style-type: none"
+                                    class="d-flex flex-column"
+                                >
+                                    <h4>Sàn TMĐT HMD</h4>
+                                    <li>
+                                        <a
+                                            href="#"
+                                            class="text-decoration-none"
+                                        >
+                                            Tổng quan về Sàn HMD
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="text-decoration-none"
+                                            >Chính sách giao hàng</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a href="#" class="text-decoration-none"
+                                            >Chính sách đổi trả hàng</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a href="#" class="text-decoration-none"
+                                            >Chính sách thanh toán</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a href="#" class="text-decoration-none"
+                                            >Chính sách bảo mật thông tin
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="text-decoration-none"
+                                            >Giải quyết tranh chấp khiếu nại</a
+                                        >
+                                    </li>
+                                </ul>
+                                <ul
+                                    style="list-style-type: none"
+                                    class="d-flex flex-column"
+                                >
+                                    <h4>Nhà bán hàng</h4>
+                                    <li>
+                                        <a
+                                            href="#"
+                                            class="text-decoration-none"
+                                        >
+                                            Quy định đối với nhà bán hàng
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="text-decoration-none"
+                                            >Hướng dẫn sử dụng gian hàng</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a href="#" class="text-decoration-none"
+                                            >Tạo gian hàng</a
+                                        >
+                                    </li>
+                                </ul>
+                                <ul
+                                    style="list-style-type: none"
+                                    class="d-flex flex-column"
+                                >
+                                    <h4>Tài khoản của bạn</h4>
+                                    <li>
+                                        <a
+                                            href="#"
+                                            class="text-decoration-none"
+                                        >
+                                            Thông tin cá nhân
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="text-decoration-none"
+                                            >Hàng đổi/ Trả lại</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a href="#" class="text-decoration-none"
+                                            >Đơn hàng
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="text-decoration-none"
+                                            >Biên lai ghi có</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a href="#" class="text-decoration-none"
+                                            >Địa chỉ
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="text-decoration-none"
+                                            >Mã giảm giá khuyến mại</a
+                                        >
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- buttton show modal -->
+        <div
+            class="modal fade"
+            id="myModal"
+            tabindex="-1"
+            role="dialog"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+        >
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">
+                            Đăng nhập
+                        </h5>
+                        <button
+                            type="button"
+                            class="btn-close"
+                            data-bs-dismiss="modal"
+                        ></button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-group mb-4">
+                                <label for="exampleInputEmail1" class="h4"
+                                    >Email</label
+                                >
+                                <input
+                                    type="email"
+                                    class="form-control"
+                                    id="exampleInputEmail1"
+                                    aria-describedby="emailHelp"
+                                    placeholder="Enter email"
+                                />
+                                <small
+                                    id="emailHelp"
+                                    class="form-text text-muted"
+                                >
+                                    We'll never share your email with anyone
+                                    else.
+                                </small>
+                            </div>
+                            <div class="form-group mb-4">
+                                <label for="exampleInputPassword1" class="h4"
+                                    >Password</label
+                                >
+                                <input
+                                    type="password"
+                                    class="form-control"
+                                    id="exampleInputPassword1"
+                                    placeholder="Password"
+                                />
+                            </div>
+                            <div class="form-group form-check">
+                                <input
+                                    type="checkbox"
+                                    class="form-check-input"
+                                    id="exampleCheck1"
+                                />
+                                <label
+                                    class="form-check-label"
+                                    for="exampleCheck1"
+                                >
+                                    Check me out
+                                </label>
+                            </div>
+                            <button
+                                type="submit"
+                                class="btn btn-danger"
+                                style="width: 100%"
+                            >
+                                Đăng nhập
+                            </button>
+                            <hr />
+                            <div class="d-flex flex-row justify-content-end">
+                                <button class="btn btn-primary me-3">
+                                    <a href="#" class="text-decoration-none">
+                                        Quên mật khẩu
+                                    </a>
+                                </button>
+                                <button class="btn btn-warning">
+                                    <a href="#" class="text-decoration-none">
+                                        Đăng ký
+                                    </a>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- modal dang ky -->
+        <div
+            class="modal fade"
+            id="myModal2"
+            tabindex="-1"
+            role="dialog"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+        >
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">
+                            Đăng ký
+                        </h5>
+                        <button
+                            type="button"
+                            class="btn-close"
+                            data-bs-dismiss="modal"
+                        ></button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-group mb-4">
+                                <label for="exampleInputEmail1" class="h4"
+                                    >Email</label
+                                >
+                                <input
+                                    type="email"
+                                    class="form-control"
+                                    id="exampleInputEmail1"
+                                    aria-describedby="emailHelp"
+                                    placeholder="Enter email"
+                                />
+                                <small
+                                    id="emailHelp"
+                                    class="form-text text-muted"
+                                >
+                                    We'll never share your email with anyone
+                                    else.
+                                </small>
+                            </div>
+                            <div class="form-group mb-4">
+                                <label for="exampleInputPassword1" class="h4"
+                                    >Password</label
+                                >
+                                <input
+                                    type="password"
+                                    class="form-control"
+                                    id="exampleInputPassword1"
+                                    placeholder="Password"
+                                />
+                            </div>
+                            <div class="form-group mb-4">
+                                <label for="exampleInputPassword1" class="h4"
+                                    >Nhập lại mật khẩu</label
+                                >
+                                <input
+                                    type="password"
+                                    class="form-control"
+                                    id="exampleInputPassword1"
+                                    placeholder="Password"
+                                />
+                            </div>
+                            <div class="form-group mb-4">
+                                <label for="exampleInputPassword1" class="h4"
+                                    >Họ và tên</label
+                                >
+                                <input
+                                    type="password"
+                                    class="form-control"
+                                    id="exampleInputPassword1"
+                                    placeholder="Password"
+                                />
+                            </div>
+                            <!-- button -->
+                            <button
+                                type="submit"
+                                class="btn btn-danger"
+                                style="width: 100%"
+                            >
+                                Đăng ký
+                            </button>
+                            <hr />
+                            <div class="d-flex flex-row justify-content-end">
+                                <button class="btn btn-primary me-3">
+                                    <a href="#" class="text-decoration-none">
+                                        Quên mật khẩu
+                                    </a>
+                                </button>
+                                <button class="btn btn-warning">
+                                    <a href="#" class="text-decoration-none">
+                                        Đăng nhập
+                                    </a>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end modal dang ky -->
+    </body>
+    <!-- JavaScript Bundle with Popper -->
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"
+    ></script>
+</html>

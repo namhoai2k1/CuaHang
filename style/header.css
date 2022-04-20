@@ -1,0 +1,24 @@
+.header-top{
+  background: rgb(207, 36, 58);
+  width: 100%;
+  color: white;
+}
+.header-nav{
+  padding-bottom: 0.3125rem;
+  background: #f12a43;
+  padding-top: 15px;
+}
+.header-nav .input-group-prepend{
+  height: 45px;
+}
+.header-nav .input{ 
+  width: 400px;
+  height: 45px;
+}
+.contacts{
+    width: 1px;
+    height: 43px;
+    background-color: white;
+    margin: 0 37px;
+    border: 0.5px solid white;
+}
