@@ -39,13 +39,34 @@
                         </div>
                         <div class="col-md-8">
                             <div class="user-info text-end">
-                                <a
-                                    href="#"
-                                    class="text-decoration-none d-flex justify-content-end gap-1 align-items-center text-white"
+                                <button
+                                    type="button"
+                                    class="btn btn-outline-danger"
+                                    data-bs-toggle="modal"
+                                    data-bs-target="#myModal"
                                 >
-                                    <i class="bi bi-person-fill"></i>
-                                    <span>Đăng nhập</span>
-                                </a>
+                                    <a
+                                        href="#"
+                                        class="text-decoration-none d-flex justify-content-end gap-1 align-items-center text-white"
+                                    >
+                                        <i class="bi bi-person-fill"></i>
+                                        <span>Đăng nhập</span>
+                                    </a>
+                                </button>
+                                <button
+                                    type="button"
+                                    class="btn btn-outline-danger"
+                                    data-bs-toggle="modal"
+                                    data-bs-target="#myModal2"
+                                >
+                                    <a
+                                        href="#"
+                                        class="text-decoration-none d-flex justify-content-end gap-1 align-items-center text-white"
+                                    >
+                                        <i class="bi bi-person-fill"></i>
+                                        <span>Đăng ký</span>
+                                    </a>
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -103,7 +124,7 @@
                                         </p>
                                     </div>
                                     <span class="contacts"></span>
-                                    <div
+                                    <a href="./giohang.html"
                                         class="d-flex align-items-center gap-2"
                                     >
                                         <i
@@ -112,7 +133,7 @@
                                         <span class="text-white"
                                             >Giỏ hàng (0)</span
                                         >
-                                    </div>
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -166,7 +187,9 @@
                                         >
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="./listsanpham.html"
+                                        <a
+                                            class="nav-link"
+                                            href="./listsanpham.html"
                                             >Sản phẩm</a
                                         >
                                     </li>
@@ -262,38 +285,26 @@
                                                     </h4>
                                                 </td>
                                                 <td>
-                                                    <div class="input-group">
-                                                        <div
-                                                            class="input-group-prepend"
+                                                    <div class="d-flex">
+                                                        <button
+                                                            class="btn btn-danger d-flex"
+                                                            id="btn__add"
                                                         >
-                                                            <button
-                                                                class="btn btn-outline-primary"
-                                                                type="button"
-                                                                id="button-addon1"
-                                                            >
-                                                                -
-                                                            </button>
-                                                        </div>
+                                                            <span>+</span>
+                                                        </button>
                                                         <input
                                                             type="text"
                                                             class="form-control"
-                                                            placeholder=""
-                                                            aria-label="Example text with button addon"
-                                                            aria-describedby="button-addon1"
-                                                            style="width: 15px"
                                                             value="1"
+                                                            style="width: 50px"
+                                                            id="input__number"
                                                         />
-                                                        <div
-                                                            class="input-group-append"
+                                                        <button
+                                                            class="btn btn-danger d-flex"
+                                                            id="btn__sub"
                                                         >
-                                                            <button
-                                                                class="btn btn-outline-primary"
-                                                                type="button"
-                                                                id="button-addon1"
-                                                            >
-                                                                +
-                                                            </button>
-                                                        </div>
+                                                            <span>-</span>
+                                                        </button>
                                                     </div>
                                                 </td>
                                                 <td>
@@ -388,26 +399,12 @@
                                                 <tr>
                                                     <td>
                                                         <!-- check box -->
-                                                        <div class="form-check">
-                                                            <input
-                                                                class="form-check-input"
-                                                                type="checkbox"
-                                                                value=""
-                                                                id="defaultCheck1"
-                                                            />
-                                                            <label
-                                                                class="form-check-label"
-                                                                for="defaultCheck1"
-                                                            >
-                                                                <strong>
-                                                                    <span>
-                                                                        Dich vu
-                                                                        mang len
-                                                                        tan nha
-                                                                    </span>
-                                                                </strong>
-                                                            </label>
-                                                        </div>
+                                                        <strong>
+                                                            <span>
+                                                                Dich vu mang len
+                                                                tan nha
+                                                            </span>
+                                                        </strong>
                                                     </td>
                                                     <td class="text-end">
                                                         <strong
@@ -424,7 +421,7 @@
                                                 </tr>
                                                 <tr>
                                                     <td>
-                                                        <strong class="h4"
+                                                        <strong class="h5"
                                                             >Tổng tiền</strong
                                                         >
                                                     </td>
@@ -465,7 +462,7 @@
                             </div>
                         </div>
                         <!-- group list -->
-                        <div class="card">
+                        <div class="card mt-3">
                             <div class="card-header">
                                 <h4 class="card-title text-uppercase">
                                     <strong>Danh mục sản phẩm</strong>
@@ -691,5 +688,199 @@
                 </div>
             </div>
         </footer>
+        <!-- buttton show modal -->
+        <div
+            class="modal fade"
+            id="myModal"
+            tabindex="-1"
+            role="dialog"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+        >
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3 class="modal-title" id="exampleModalLabel">
+                            Đăng nhập
+                        </h3>
+                        <button
+                            type="button"
+                            class="btn-close"
+                            data-bs-dismiss="modal"
+                        ></button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-group mb-4">
+                                <label for="exampleInputEmail1" class="h5"
+                                    >Email</label
+                                >
+                                <input
+                                    type="email"
+                                    class="form-control"
+                                    id="exampleInputEmail1"
+                                    aria-describedby="emailHelp"
+                                    placeholder="Enter email"
+                                />
+                                <small
+                                    id="emailHelp"
+                                    class="form-text text-muted"
+                                >
+                                    We'll never share your email with anyone
+                                    else.
+                                </small>
+                            </div>
+                            <div class="form-group mb-4">
+                                <label for="exampleInputPassword1" class="h5"
+                                    >Password</label
+                                >
+                                <input
+                                    type="password"
+                                    class="form-control"
+                                    id="exampleInputPassword1"
+                                    placeholder="Password"
+                                />
+                            </div>
+                            <div class="form-group form-check">
+                                <input
+                                    type="checkbox"
+                                    class="form-check-input"
+                                    id="exampleCheck1"
+                                />
+                                <label
+                                    class="form-check-label"
+                                    for="exampleCheck1"
+                                >
+                                    Check me out
+                                </label>
+                            </div>
+                            <button
+                                type="submit"
+                                class="btn btn-danger"
+                                style="width: 100%"
+                            >
+                                Đăng nhập
+                            </button>
+                            <hr />
+                            <div class="d-flex flex-row justify-content-end">
+                                <button class="btn btn-dark me-3">
+                                    <a href="#" class="text-white">
+                                        Quên mật khẩu
+                                    </a>
+                                </button>
+                                <button class="btn btn-success">
+                                    <a href="#" class="text-white">
+                                        Đăng ký
+                                    </a>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- modal dang ky -->
+        <div
+            class="modal fade"
+            id="myModal2"
+            tabindex="-1"
+            role="dialog"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+        >
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3 class="modal-title" id="exampleModalLabel">
+                            Đăng ký
+                        </h3>
+                        <button
+                            type="button"
+                            class="btn-close"
+                            data-bs-dismiss="modal"
+                        ></button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-group mb-4">
+                                <label for="exampleInputEmail1" class="h5"
+                                    >Email</label
+                                >
+                                <input
+                                    type="email"
+                                    class="form-control"
+                                    id="exampleInputEmail1"
+                                    aria-describedby="emailHelp"
+                                    placeholder="Enter email"
+                                />
+                                <small
+                                    id="emailHelp"
+                                    class="form-text text-muted"
+                                >
+                                    We'll never share your email with anyone
+                                    else.
+                                </small>
+                            </div>
+                            <div class="form-group mb-4">
+                                <label for="exampleInputPassword1" class="h5"
+                                    >Password</label
+                                >
+                                <input
+                                    type="password"
+                                    class="form-control"
+                                    id="exampleInputPassword1"
+                                    placeholder="Password"
+                                />
+                            </div>
+                            <div class="form-group mb-4">
+                                <label for="exampleInputPassword1" class="h5"
+                                    >Nhập lại mật khẩu</label
+                                >
+                                <input
+                                    type="password"
+                                    class="form-control"
+                                    id="exampleInputPassword1"
+                                    placeholder="Repeat password"
+                                />
+                            </div>
+                            <div class="form-group mb-4">
+                                <label for="exampleInputPassword1" class="h5"
+                                    >Họ và tên</label
+                                >
+                                <input
+                                    type="password"
+                                    class="form-control"
+                                    id="exampleInputPassword1"
+                                    placeholder="Full name"
+                                />
+                            </div>
+                            <!-- button -->
+                            <button
+                                type="submit"
+                                class="btn btn-danger"
+                                style="width: 100%"
+                            >
+                                Đăng ký
+                            </button>
+                            <hr />
+                            <div class="d-flex flex-row justify-content-end">
+                                <button class="btn btn-dark me-3">
+                                    <a href="#" class="text-white">
+                                        Quên mật khẩu
+                                    </a>
+                                </button>
+                                <button class="btn btn-success">
+                                    <a href="#" class="text-white">
+                                        Đăng nhập
+                                    </a>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end modal dang ky -->
+        <script src="./js/script.js"></script>
     </body>
 </html>

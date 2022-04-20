@@ -124,7 +124,7 @@
                                         </p>
                                     </div>
                                     <span class="contacts"></span>
-                                    <div
+                                    <a href="./giohang.html"
                                         class="d-flex align-items-center gap-2"
                                     >
                                         <i
@@ -133,7 +133,7 @@
                                         <span class="text-white"
                                             >Giỏ hàng (0)</span
                                         >
-                                    </div>
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -247,11 +247,11 @@
                                 </div>
                             </div>
                             <div class="col-9">
-                                <div class="border shadow-lg">
+                                <div class="border">
                                     <img
-                                        src="https://source.unsplash.com/random/500x500"
+                                        src="https://source.unsplash.com/random/600x600"
                                         style="max-width: 100%"
-                                        class="img-responsive"
+                                        class="img-responsive shadow-lg"
                                         alt=""
                                     />
                                 </div>
@@ -289,7 +289,7 @@
                             <div class="d-flex flex-column">
                                 <p class="mb-1 text-uppercase">Số lượng</p>
                                 <div class="d-flex btn-group">
-                                    <button class="btn btn-danger d-flex gap-2">
+                                    <button class="btn btn-danger d-flex gap-2" id="btn__add">
                                         <span>+</span>
                                     </button>
                                     <input
@@ -297,8 +297,9 @@
                                         class="form-control"
                                         value="1"
                                         style="width: 50px"
+                                        id="input__number"
                                     />
-                                    <button class="btn btn-danger d-flex gap-2">
+                                    <button class="btn btn-danger d-flex gap-2" id="btn__sub">
                                         <span>-</span>
                                     </button>
                                 </div>
@@ -313,18 +314,30 @@
                         </div>
                         <!-- chia se -->
                         <div class="d-flex mt-5 align-items-center gap-3">
-                            <span class="h5">Chia se</span>
-                            <a>
-                                <img src="https://source.unsplash.com/random/50x50" alt="" class="img-responsive rounded-circle">
+                            <span class="h6">Chia se</span>
+                            <a href="#" class="">
+                                <!-- icon facebook -->
+                                <span class="rounded-circle h1 text-danger">
+                                    <i class="fab fa-facebook"></i>
+                                </span>
                             </a>
-                            <a>
-                                <img src="https://source.unsplash.com/random/50x50" alt="" class="img-responsive rounded-circle">
+                            <a href="#" class="">
+                                <!-- icon twitter -->
+                                <span class="rounded-circle h1 text-danger">
+                                    <i class="fab fa-twitter"></i>
+                                </span>
                             </a>
-                            <a>
-                                <img src="https://source.unsplash.com/random/50x50" alt="" class="img-responsive rounded-circle">
+                            <a href="#" class="">
+                                <!-- icon google -->
+                                <span class="rounded-circle h1 text-danger">
+                                    <i class="fab fa-google"></i>
+                                </span>
                             </a>
-                            <a>
-                                <img src="https://source.unsplash.com/random/50x50" alt="" class="img-responsive rounded-circle">
+                            <a href="#" class="">
+                                <!-- icon pinterest -->
+                                <span class="rounded-circle h1 text-danger">
+                                    <i class="fab fa-pinterest"></i>
+                                </span>
                             </a>
                         </div>
                         <!-- bao ve quyen loi kac hang, giao hanh nhanh kiem thu hang hoa -->
@@ -925,6 +938,7 @@
             </div>
         </footer>
         <!-- buttton show modal -->
+        <!-- buttton show modal -->
         <div
             class="modal fade"
             id="myModal"
@@ -936,9 +950,9 @@
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">
+                        <h3 class="modal-title" id="exampleModalLabel">
                             Đăng nhập
-                        </h5>
+                        </h3>
                         <button
                             type="button"
                             class="btn-close"
@@ -948,7 +962,7 @@
                     <div class="modal-body">
                         <form>
                             <div class="form-group mb-4">
-                                <label for="exampleInputEmail1" class="h4"
+                                <label for="exampleInputEmail1" class="h5"
                                     >Email</label
                                 >
                                 <input
@@ -967,7 +981,7 @@
                                 </small>
                             </div>
                             <div class="form-group mb-4">
-                                <label for="exampleInputPassword1" class="h4"
+                                <label for="exampleInputPassword1" class="h5"
                                     >Password</label
                                 >
                                 <input
@@ -999,13 +1013,13 @@
                             </button>
                             <hr />
                             <div class="d-flex flex-row justify-content-end">
-                                <button class="btn btn-primary me-3">
-                                    <a href="#" class="text-decoration-none">
+                                <button class="btn btn-dark me-3">
+                                    <a href="#" class="text-white">
                                         Quên mật khẩu
                                     </a>
                                 </button>
-                                <button class="btn btn-warning">
-                                    <a href="#" class="text-decoration-none">
+                                <button class="btn btn-success">
+                                    <a href="#" class="text-white">
                                         Đăng ký
                                     </a>
                                 </button>
@@ -1027,9 +1041,9 @@
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">
+                        <h3 class="modal-title" id="exampleModalLabel">
                             Đăng ký
-                        </h5>
+                        </h3>
                         <button
                             type="button"
                             class="btn-close"
@@ -1039,7 +1053,7 @@
                     <div class="modal-body">
                         <form>
                             <div class="form-group mb-4">
-                                <label for="exampleInputEmail1" class="h4"
+                                <label for="exampleInputEmail1" class="h5"
                                     >Email</label
                                 >
                                 <input
@@ -1058,7 +1072,7 @@
                                 </small>
                             </div>
                             <div class="form-group mb-4">
-                                <label for="exampleInputPassword1" class="h4"
+                                <label for="exampleInputPassword1" class="h5"
                                     >Password</label
                                 >
                                 <input
@@ -1069,25 +1083,25 @@
                                 />
                             </div>
                             <div class="form-group mb-4">
-                                <label for="exampleInputPassword1" class="h4"
+                                <label for="exampleInputPassword1" class="h5"
                                     >Nhập lại mật khẩu</label
                                 >
                                 <input
                                     type="password"
                                     class="form-control"
                                     id="exampleInputPassword1"
-                                    placeholder="Password"
+                                    placeholder="Repeat password"
                                 />
                             </div>
                             <div class="form-group mb-4">
-                                <label for="exampleInputPassword1" class="h4"
+                                <label for="exampleInputPassword1" class="h5"
                                     >Họ và tên</label
                                 >
                                 <input
                                     type="password"
                                     class="form-control"
                                     id="exampleInputPassword1"
-                                    placeholder="Password"
+                                    placeholder="Full name"
                                 />
                             </div>
                             <!-- button -->
@@ -1100,13 +1114,13 @@
                             </button>
                             <hr />
                             <div class="d-flex flex-row justify-content-end">
-                                <button class="btn btn-primary me-3">
-                                    <a href="#" class="text-decoration-none">
+                                <button class="btn btn-dark me-3">
+                                    <a href="#" class="text-white">
                                         Quên mật khẩu
                                     </a>
                                 </button>
-                                <button class="btn btn-warning">
-                                    <a href="#" class="text-decoration-none">
+                                <button class="btn btn-success">
+                                    <a href="#" class="text-white">
                                         Đăng nhập
                                     </a>
                                 </button>
@@ -1116,6 +1130,8 @@
                 </div>
             </div>
         </div>
+        <!-- end modal dang ky -->
+        <script src="./js/script.js"></script>
         <!-- end modal dang ky -->
     </body>
     <!-- JavaScript Bundle with Popper -->
